@@ -121,19 +121,6 @@ export const Header = () => {
 
           {/* Actions & Auth Controls */}
           <div className="flex items-center space-x-3">
-            {/* Theme Toggle */}
-            <button
-              onClick={() => setIsDarkMode(!isDarkMode)}
-              className="p-2 rounded-lg text-gray-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition"
-              title="Toggle theme"
-            >
-              {isDarkMode ? (
-                <Sun className="w-5 h-5 text-amber-400" />
-              ) : (
-                <Moon className="w-5 h-5" />
-              )}
-            </button>
-
             {isAuthenticated ? (
               <div className="flex items-center space-x-3">
                 {/* Publish Article CTA */}
